@@ -20,9 +20,9 @@ used in integration tests of `Clojure` tools related to [Cider][cider].
 
 ## License
 
-Copyright 2019 Alan Ghelardi Distributed under the GNU General Public License,
+Copyright 2019 Alan Ghelardi
 
-version 3
+Distributed under the GNU General Public License, version 3
 
 [cask]: https://cask.readthedocs.io/en/latest/
 [cider]: https://github.com/clojure-emacs/cider
