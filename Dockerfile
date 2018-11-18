@@ -1,16 +1,15 @@
 FROM archlinux/base
 
 ARG CASK_VERSION
-
 ARG LEIN_VERSION=2.8.1
 
 RUN pacman -Sy --noconfirm \
 base-devel \
+emacs-nox \
 git \
-openssh \
 jdk8-openjdk \
-python \
-emacs-nox
+openssh \
+python
 
 RUN curl https://raw.githubusercontent.com/technomancy/leiningen/${LEIN_VERSION}/bin/lein \
          --output /usr/bin/lein && \
