@@ -1,8 +1,9 @@
 cask_version = 0.8.4
-image = emacs:cask-$(cask_version)
+tag = cask-$(cask_version)
+image = emacs:$(tag)
 
 build:
-	@docker build --build-arg "CASK_VERSION=$(cask_version)" -t emacs:cask-$(cask_version) .
+	@docker build --build-arg "CASK_VERSION=$(cask_version)" -t $(image) .
 
 test:
 	@docker run -v `pwd`:`pwd` \
@@ -14,7 +15,7 @@ clean:
 	@rm -f Cask
 
 release: build test
-	@git tag $(cask_version) && git push origin $(cask_version)
+	@git tag $(tag) && git push origin $(tag)
 	@docker push alangh/$(image)
 	@make clean
 	@echo "Done"
