@@ -15,7 +15,7 @@ CircleCI's job. For more details, refer to the topic [Using Custom-Built Docker
 Images](https://circleci.com/docs/2.0/custom-images/) in the CircleCI's
 documentation.
 
-Also, it comes with [OpenJDK8](openjdk) and [Leiningen](leiningen) 2.8.1 to be
+Also, it comes with [OpenJDK][openjdk] 8 and [Leiningen][leiningen] 2.8.1 to be
 used in integration tests of `Clojure` tools related to [Cider][cider].
 
 ## License

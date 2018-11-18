@@ -12,3 +12,9 @@ test:
 
 clean:
 	@rm -f Cask
+
+release: build test
+	@git tag $(version) && git push origin $(version)
+	@docker alangh/$(image)
+	@make clean
+	@echo "Done"
