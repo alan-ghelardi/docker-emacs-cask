@@ -14,7 +14,7 @@ clean:
 	@rm -f Cask
 
 release: build test
-	@git tag $(version) && git push origin $(version)
+	@git tag $(cask_version) && git push origin $(cask_version)
 	@docker alangh/$(image)
 	@make clean
 	@echo "Done"
