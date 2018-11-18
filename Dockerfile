@@ -1,6 +1,9 @@
 FROM archlinux/base
 
+LABEL maintainer="Alan Ghelardi <alan.ghelardi@gmail.com>"
+
 ARG CASK_VERSION
+
 ARG LEIN_VERSION=2.8.1
 
 RUN pacman -Sy --noconfirm \
