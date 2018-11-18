@@ -3,10 +3,10 @@
 Docker image containing Emacs (nox) and Cask for continuous integration
 processes
 
-[Emacs][emacs] is an extensible, customizable, free/libre text editor maintained
-by the GNU project. [Cask][cask] is a project management tool for Emacs Lisp to
-automate the package development cycle; development, dependencies, testing,
-building, packaging and more.
+[Emacs][emacs] is an extensible, customizable, free/libre text editor developed
+and maintained within the [GNU][gnu] project. [Cask][cask] is a project
+management tool for Emacs Lisp to automate the package development cycle;
+development, dependencies, testing, building, packaging and more.
 
 This Docker image was designed to be used in continuous integration pipelines in
 order to test Emacs Lisp projects. In addition to `Emacs` and `Cask`, it has all
@@ -21,11 +21,13 @@ used in integration tests of `Clojure` tools related to [Cider][cider].
 ## License
 
 Copyright 2019 Alan Ghelardi Distributed under the GNU General Public License,
+
 version 3
 
 [cask]: https://cask.readthedocs.io/en/latest/
 [cider]: https://github.com/clojure-emacs/cider
 [circleci]: https://circleci.com/docs/2.0/
 [emacs]: https://www.gnu.org/software/emacs/
+[gnu]: https://www.gnu.org/
 [leiningen]: https://leiningen.org/
 [openjdk]: https://openjdk.java.net/
